@@ -1,19 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-		<!-- <record id='neonety.nationality_type_partners_fields' model='ir.ui.view'>
-			<field name='name'>neonety.nationality.type.partners.fields</field>
-			<field name='model'>res.partner</field>
-			<field name='inherit_id' ref='account.view_partner_property_form'/>
-			<field name='arch' type='xml'>
-				<xpath expr="//field[@name='property_account_position_id']" position='after'>
-					<field name='partner_nationality' widget='selection'/>
-					<field name='partner_type' widget='selection'/>
-				</xpath>
-			</field>
-		</record> -->
-
-
 		<record id='subtype.ticket_subtypes' model='ir.ui.view'>
 			<field name='name'>subtype_ticket</field>
 			<field name='model'>helpdesk.ticket</field>
