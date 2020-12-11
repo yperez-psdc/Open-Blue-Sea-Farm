@@ -23,7 +23,7 @@
 					<group name="subtype_left" string="Query class">
 						<field name="subtype_selection" string="Query subtypes"  widget="selection"/>
 					</group>
-					<group name="subtype_right" string="Query subclass"/>
+					<group name="subtype_right" string="Query subclass">
 						<!-- attrs="{'invisible': [('include_last_name','=',False)] }" -->
 						<!-- product -->
 						<field name="blown_bags" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=',product)] }"/>
