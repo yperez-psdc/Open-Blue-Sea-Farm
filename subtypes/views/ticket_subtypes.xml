@@ -13,19 +13,19 @@
 					<group name="subtype_right" string="Query subclass">
 						<!-- attrs="{'invisible': [('include_last_name','=',False)] }" -->
 						<!-- product -->
-						<field name="blown_bags" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=',product)] }"/>
+						<field name="blown_bags" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
 						<!-- product end -->
 
 						<!-- invoicing -->
-						<field name="delivery_format" string="Incorrect Delivery Format"  attrs="{'invisible': [('subtype_selection','!=',invoicing)] }"/>
+						<field name="delivery_format" string="Incorrect Delivery Format"  attrs="{'invisible': [('subtype_selection','!=','invoicing')] }"/>
 						<!-- invoicing end -->
 
 						<!-- logistics -->
-						<field name="log_old_product" string="Old Product"  attrs="{'invisible': [('subtype_selection','!=',logistics)] }"/>
+						<field name="log_old_product" string="Old Product"  attrs="{'invisible': [('subtype_selection','!=','logistics')] }"/>
 						<!-- logistics end -->
 
 						<!-- customer -->
-						<field name="cancelled_harvest" string="Cancelled Harvest"  attrs="{'invisible': [('subtype_selection','!=',customer)] }"/>
+						<field name="cancelled_harvest" string="Cancelled Harvest"  attrs="{'invisible': [('subtype_selection','!=','customer')] }"/>
 						<!-- customer end -->
 					</group>
 				</xpath>
