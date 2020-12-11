@@ -15,7 +15,7 @@
 
 
 		<record id='subtype.ticket_subtypes' model='ir.ui.view'>
-			<field name='name'>subtype.ticket</field>
+			<field name='name'>subtype_ticket</field>
 			<field name='model'>helpdesk.ticket</field>
 			<field name='inherit_id' ref='helpdesk.ticket.subtype'/>
 			<field name='arch' type='xml'>
