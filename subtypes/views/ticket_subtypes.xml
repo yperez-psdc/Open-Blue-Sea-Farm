@@ -14,36 +14,36 @@
 						<!-- attrs="{'invisible': [('include_last_name','=',False)] }" -->
 						<!-- product -->
 						<field name="blown_bags" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
-						<field name="broken_boxes" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
-						<field name="broken_vacuum_seal" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
-						<field name="fatty_composition" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
-						<field name="red_flesh" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
-						<field name="warm_temperature" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
-						<field name="weight_discrepancy" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
-						<field name="volume_error" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
-						<field name="old_product" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
-						<field name="discoloration" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
-						<field name="food_safety_issues" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
+						<field name="broken_boxes" string="Broken Boxes"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
+						<field name="broken_vacuum_seal" string="Broken Vacuum Seal"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
+						<field name="fatty_composition" string="Fatty Composition"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
+						<field name="red_flesh" string="Red Flesh"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
+						<field name="warm_temperature" string="Warm Temperature"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
+						<field name="weight_discrepancy" string="Weight Discrepancy"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
+						<field name="volume_error" string="Volume error"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
+						<field name="old_product" string="Old Product"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
+						<field name="discoloration" string="Discoloration"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
+						<field name="food_safety_issues" string="Food Safety Issues"  attrs="{'invisible': [('subtype_selection','!=','product')] }"/>
 						<!-- product end -->
 
 						<!-- invoicing -->
 						<field name="delivery_format" string="Incorrect Delivery Format"  attrs="{'invisible': [('subtype_selection','!=','invoicing')] }"/>
-						<field name="delivery_size" string="Incorrect Delivery Format"  attrs="{'invisible': [('subtype_selection','!=','invoicing')] }"/>
-						<field name="price_quote" string="Incorrect Delivery Format"  attrs="{'invisible': [('subtype_selection','!=','invoicing')] }"/>
-						<field name="charge_error" string="Incorrect Delivery Format"  attrs="{'invisible': [('subtype_selection','!=','invoicing')] }"/>
+						<field name="delivery_size" string="Incorrect Delivery Size"  attrs="{'invisible': [('subtype_selection','!=','invoicing')] }"/>
+						<field name="price_quote" string="Incorrect Price Quote"  attrs="{'invisible': [('subtype_selection','!=','invoicing')] }"/>
+						<field name="charge_error" string="Sample Charge Error"  attrs="{'invisible': [('subtype_selection','!=','invoicing')] }"/>
 						<!-- invoicing end -->
 
 						<!-- logistics -->
 						<field name="log_old_product" string="Old Product"  attrs="{'invisible': [('subtype_selection','!=','logistics')] }"/>
-						<field name="storage_error" string="Old Product"  attrs="{'invisible': [('subtype_selection','!=','logistics')] }"/>
-						<field name="log_error" string="Old Product"  attrs="{'invisible': [('subtype_selection','!=','logistics')] }"/>
-						<field name="certificate_delay" string="Old Product"  attrs="{'invisible': [('subtype_selection','!=','logistics')] }"/>
+						<field name="storage_error" string="Storage Facility Error"  attrs="{'invisible': [('subtype_selection','!=','logistics')] }"/>
+						<field name="log_error" string="Logistics Delivery Error"  attrs="{'invisible': [('subtype_selection','!=','logistics')] }"/>
+						<field name="certificate_delay" string="Health Certificate Delays"  attrs="{'invisible': [('subtype_selection','!=','logistics')] }"/>
 						<!-- logistics end -->
 
 						<!-- customer -->
 						<field name="cancelled_harvest" string="Cancelled Harvest"  attrs="{'invisible': [('subtype_selection','!=','customer')] }"/>
-						<field name="cus_didnt_pick_up" string="Cancelled Harvest"  attrs="{'invisible': [('subtype_selection','!=','customer')] }"/>
-						<field name="customer_other" string="Cancelled Harvest"  attrs="{'invisible': [('subtype_selection','!=','customer')] }"/>
+						<field name="cus_didnt_pick_up" string="Customer did not pick up"  attrs="{'invisible': [('subtype_selection','!=','customer')] }"/>
+						<field name="customer_other" string="Other"  attrs="{'invisible': [('subtype_selection','!=','customer')] }"/>
 						<!-- customer end -->
 					</group>
 				</xpath>
