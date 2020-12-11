@@ -17,7 +17,7 @@
 		<record id='subtype.ticket_subtypes' model='ir.ui.view'>
 			<field name='name'>subtype.ticket.subtypes</field>
 			<field name='model'>helpdesk.ticket</field>
-			<field name='inherit_id' ref='helpdesk.ticket.subtype'/>
+			<field name='inherit_id' ref='helpdesk.ticket'/>
 			<field name='arch' type='xml'>
 				<xpath expr="//form[1]/sheet[1]/group[1]" position="after">
 					<group name="subtype_left" string="Query class">
