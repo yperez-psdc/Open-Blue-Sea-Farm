@@ -9,7 +9,7 @@
     'website': "https://www.psdc.com.pa",
     'category': 'Other',
     'version': '1.0.0',
-    'depends': ['base'],
+    'depends': ['helpdesk'],
     'data': [
         'views/ticket_subtypes.xml'
     ]
