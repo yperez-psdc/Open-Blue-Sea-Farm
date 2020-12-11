@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<!-- <record id='neonety.nationality_type_partners_fields' model='ir.ui.view'>
+			<field name='name'>neonety.nationality.type.partners.fields</field>
+			<field name='model'>res.partner</field>
+			<field name='inherit_id' ref='account.view_partner_property_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//field[@name='property_account_position_id']" position='after'>
+					<field name='partner_nationality' widget='selection'/>
+					<field name='partner_type' widget='selection'/>
+				</xpath>
+			</field>
+		</record> -->
+
+
+		<record id='subtype.ticket_subtypes' model='ir.ui.view'>
+			<field name='name'>subtype.ticket.subtypes</field>
+			<field name='model'>helpdesk.ticket</field>
+			<field name='inherit_id' ref='helpdesk.ticket.subtype'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//form[1]/sheet[1]/group[1]" position="after">
+					<group name="subtype_left" string="Query class">
+						<field name="subtype_selection" string="Query subtypes"  widget="selection"/>
+					</group>
+					<group name="subtype_right" string="Query subclass"/>
+						<!-- attrs="{'invisible': [('include_last_name','=',False)] }" -->
+						<!-- product -->
+						<field name="blown_bags" string="Blown Bags"  attrs="{'invisible': [('subtype_selection','!=',product)] }"/>
+						<!-- product end -->
+
+						<!-- invoicing -->
+						<field name="delivery_format" string="Incorrect Delivery Format"  attrs="{'invisible': [('subtype_selection','!=',invoicing)] }"/>
+						<!-- invoicing end -->
+
+						<!-- logistics -->
+						<field name="log_old_product" string="Old Product"  attrs="{'invisible': [('subtype_selection','!=',logistics)] }"/>
+						<!-- logistics end -->
+
+						<!-- customer -->
+						<field name="cancelled_harvest" string="Cancelled Harvest"  attrs="{'invisible': [('subtype_selection','!=',customer)] }"/>
+						<!-- customer end -->
+					</group>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>
