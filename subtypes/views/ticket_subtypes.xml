@@ -8,7 +8,7 @@
 			<field name='arch' type='xml'>
 				<xpath expr="//form[1]/sheet[1]/group[1]" position="after">
 					<group name="subtype_left" string="Query class"  >
-						<field name="subtype_selection" string="Query subtypes"  widget="selection" attrs="{'invisible': [('team_id.name','!=','CLAIMS')], 'required': [('team_id.name', '=', 'CLAIMS')]}"/>
+						<field name="subtype_selection" string="Query subtypes"  widget="selection" attrs="{'invisible': [('name','!=','CLAIMS')], 'required': [('name', '=', 'CLAIMS')]}"/>
 					</group>
 					<group name="subtype_right" string="Query subclass">
 						<!-- attrs="{'invisible': [('include_last_name','=',False)] }" -->
