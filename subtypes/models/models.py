@@ -15,8 +15,9 @@ class Subtypes(models.Model):
 		('logistics', 'Logistics'),
 		('customer', 'Customer Service')
 		],
-		string='Query subtype',
-		required=True)
+		string='Query subtype'
+		)
+		#,required=True
 
 	#	Product Quality and/or Food Safety
 	blown_bags = fields.Boolean(string='Blown Bags')
