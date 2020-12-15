@@ -14,7 +14,7 @@ class Teamv2(models.Model):
 
 
 class Subtypes(models.Model):
-	_name = 'helpdesk.ticket'
+	_name = 'helpdesk.subtype'
 	_inherit = ['helpdesk.ticket, helpdesk.team']
 
 	subtype_selection = fields.Selection([
