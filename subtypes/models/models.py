@@ -25,7 +25,7 @@ class Subtypes(models.Model):
 		)
 		#,required=True
 
-	subtype_check = fields.Boolean(string='subtype check', related='team_id.claim_subtypes', invisible=1)
+	subtype_check = fields.Boolean(string='subtype check', related='team_id.claim_subtypes')
 
 	#	Product Quality and/or Food Safety
 	blown_bags = fields.Boolean(string='Blown Bags')
