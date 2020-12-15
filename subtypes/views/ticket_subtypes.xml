@@ -9,6 +9,7 @@
 				<xpath expr="//form[1]/sheet[1]/group[1]" position="after">
 					<group name="subtype_left" string="Query class" attrs="{'invisible': [('claim_subtypes','!=',True)], 'required': [('claim_subtypes', '=', True)]}" >
 						<field name="subtype_selection" string="Query subtypes"  widget="selection" attrs="{'invisible': [('claim_subtypes','!=',True)], 'required': [('claim_subtypes', '=', True)]}"/>
+						<field name="claim_subtypes" string="Claim subtypes" />
 					</group>
 					<group name="subtype_right" string="Query subclass" attrs="{'invisible': [('claim_subtypes','!=',True)], 'required': [('claim_subtypes', '=', True)]}"> 
 						<!-- attrs="{'invisible': [('include_last_name','=',False)] }" -->
