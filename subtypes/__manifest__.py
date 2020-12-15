@@ -11,6 +11,7 @@
     'version': '1.0.0',
     'depends': ['helpdesk'],
     'data': [
-        'views/ticket_subtypes.xml'
+        'views/ticket_subtypes.xml',
+        'views/team_subtypes.xml'
     ]
 }
