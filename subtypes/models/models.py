@@ -50,3 +50,10 @@ class Subtypes(models.Model):
 	cancelled_harvest = fields.Boolean(string='Cancelled Harvest')
 	cus_didnt_pick_up = fields.Boolean(string='Customer did not pick up')
 	customer_other = fields.Text(string='Other')
+
+
+class Teamv2(models.Model):
+	_name = 'helpdesk.team'
+	_inherit = 'helpdesk.team'
+
+	claim_subtypes = fields.Boolean(string ='Claim subtypes')
