@@ -6,7 +6,7 @@
 			<field name='model'>helpdesk.team</field>
 			<field name='inherit_id' ref='helpdesk.helpdesk_team_view_form'/>
 			<field name='arch' type='xml'>
-				<xpath expr="//form[1]/sheet[1]/div[@description][1]" position="replace">
+				<xpath expr="//form[1]/sheet[1]/div[@description]" position="replace">
                     <field name="description" />
                     <group name="Team claim subtypes" string="Check for claim subtypes">
                         <field name="claim_subtypes" string="Claim subtypes"/>
