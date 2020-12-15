@@ -4,8 +4,6 @@ import datetime
 from odoo.exceptions import ValidationError
 from dateutil.relativedelta import relativedelta
 import logging
-
-
 class Teamv2(models.Model):
 	_name = 'helpdesk.team'
 	_inherit = 'helpdesk.team'
@@ -14,8 +12,8 @@ class Teamv2(models.Model):
 
 
 class Subtypes(models.Model):
-	_name = 'helpdesk.subtype'
-	_inherit = ['helpdesk.ticket, helpdesk.team']
+	_name = 'helpdesk.ticket'
+	_inherit = 'helpdesk.ticket'
 
 	subtype_selection = fields.Selection([
 		('product', 'Product Quality and/or Food Safety'),
