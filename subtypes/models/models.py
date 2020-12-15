@@ -7,7 +7,7 @@ import logging
 
 class Subtypes(models.Model):
 	_name = 'helpdesk.ticket'
-	_inherit = 'helpdesk.ticket'
+	_inherit = 'helpdesk.ticket,helpdesk.team'
 
 	subtype_selection = fields.Selection([
 		('product', 'Product Quality and/or Food Safety'),
