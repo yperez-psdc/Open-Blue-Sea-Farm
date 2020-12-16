@@ -1,0 +1,41 @@
+<odoo>
+  <data>
+      <record id="purchase_order_form_inherit" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+          <xpath expr="//field[@name='partner_id']" position="after">
+            <field name="validation_level_required" invisible="1"/>
+          </xpath>
+
+            
+         <xpath expr="//field[@name='partner_ref']" position="after">
+            <field name="compute_validation_purchasing_user" invisible="1"/>
+            <field name="compute_validation_purchasing_manager" invisible="1"/>
+            <field name="compute_validation_department_manager" invisible="1"/>
+            <field name="compute_validation_director" invisible="1"/>
+            <field name="compute_validation_cfo_or_coo" invisible="1"/>
+            <field name="compute_validation_ceo" invisible="1"/>
+
+          </xpath>
+
+          <xpath expr="//header" position="inside">
+             <button name="button_validation_purchasing_user" string="Approval by PO User" type="object" class="btn-primary" groups="purchase.group_purchase_user" attrs="{'invisible': [('compute_validation_purchasing_user', '=', True)]}"/>
+             
+             <button name="button_validation_purchasing_manager" string="Approval by Purchase Manager" type="object" class="btn-primary"  groups="purchase_requisitions_extend.group_purchase_manager" attrs="{'invisible': [('compute_validation_purchasing_manager', '=', True)]}"/>
+             
+             <button name="button_validation_department_manager" string="Approval by Department Manager" type="object" class="btn-primary"  groups="purchase_requisitions_extend.group_purchase_department_manager" attrs="{'invisible': [('compute_validation_department_manager', '=', True)]}"/>
+             
+             <button name="button_validation_director" string="Approval by Director" type="object" class="btn-primary" groups="purchase_requisitions_extend.group_purchase_director"  attrs="{'invisible': [('compute_validation_director', '=', True)]}"/>
+             
+             <button name="button_validation_cfo_or_coo" string="Approval by CFO/COO" type="object" class="btn-primary" groups="purchase_requisitions_extend.group_purchase_cfo_or_coo" attrs="{'invisible': [('compute_validation_cfo_or_coo', '=', True)]}"/>
+
+             <button name="button_validation_ceo" string="Approval by CEO" type="object" class="btn-primary" groups="purchase_requisitions_extend.group_purchase_ceo" attrs="{'invisible': [('compute_validation_ceo', '=', True)]}"/>
+
+
+          </xpath>
+        </field>
+      </record>
+  </data>
+</odoo>
