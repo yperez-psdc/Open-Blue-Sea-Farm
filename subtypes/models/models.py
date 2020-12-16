@@ -15,7 +15,7 @@ class Subtypes(models.Model):
 	_name = 'helpdesk.ticket'
 	_inherit = 'helpdesk.ticket'
 
-	sale_order_products = fields.Many2many('helpdesk.ticket',  relation='help_desk_rel', column1='sale.order.line' )
+	sale_order_products = fields.Many2many('sale.order.line',  relation='help_desk_rel', column1='order_id' )
 	# domain="[('order_id','=','sale_order_id')]"
 
 	# @api.onchange('sale_order_id')
