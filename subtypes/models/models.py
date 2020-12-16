@@ -15,8 +15,7 @@ class Subtypes(models.Model):
 	_name = 'helpdesk.ticket'
 	_inherit = 'helpdesk.ticket'
 
-	sale_order_products = fields.Many2many('sale.order.line', relation='sale_oder' )
-
+	sale_order_products = fields.Many2many('sale.order.line',  relation='sale.order.line' )
 	# column1='product_id'
 	# , domain="[('order_id', '=', 'sale_order_id')]"
 
