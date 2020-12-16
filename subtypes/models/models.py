@@ -15,6 +15,12 @@ class Subtypes(models.Model):
 	_name = 'helpdesk.ticket'
 	_inherit = 'helpdesk.ticket'
 
+	sale_order_products = fields.many2many('sale.order.line')
+
+	# @api.onchange('sale_order_id')
+	# def _onchange_product(self):
+    # 	return 'domain': {'sale_order_products': [('order_id', '=', self.sale_order_id.id)]}
+
 	subtype_selection = fields.Selection([
 		('product', 'Product Quality and/or Food Safety'),
 		('invoicing', 'Invoicing'),

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id='subtypes.ticket_subtypes' model='ir.ui.view'>
+			<field name='name'>subtypes_ticket</field>
+			<field name='model'>helpdesk.ticket</field>
+			<field name='inherit_id' ref='helpdesk.helpdesk_ticket_view_form'/>
+			<field name='arch' type='xml'>
+				<xpath expr="//field[@name='sale_order_id']" position="after">
+                    <field name="sale_order_products" widget="many2many_tags"/>
+                </xpath>
+			</field>
+		</record>
+	</data>
+</odoo>
