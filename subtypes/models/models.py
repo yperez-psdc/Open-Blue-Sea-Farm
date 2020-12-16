@@ -15,7 +15,7 @@ class Subtypes(models.Model):
 	_name = 'helpdesk.ticket'
 	_inherit = 'helpdesk.ticket'
 
-	sale_order_products = fields.many2many('sale.order.line')
+	sale_order_products = fields.Many2many('sale.order.line')
 
 	# @api.onchange('sale_order_id')
 	# def _onchange_product(self):
