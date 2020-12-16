@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-		<record id='subtypes.ticket_subtypes' model='ir.ui.view'>
-			<field name='name'>subtypes_ticket</field>
+		<record id='subtypes.ticket_product' model='ir.ui.view'>
+			<field name='name'>product_ticket</field>
 			<field name='model'>helpdesk.ticket</field>
 			<field name='inherit_id' ref='helpdesk.helpdesk_ticket_view_form'/>
 			<field name='arch' type='xml'>
